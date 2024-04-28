@@ -4,6 +4,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\EmailController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\StripeController;
@@ -19,6 +20,7 @@ Route::get('/', function () {
 
 Route::get('/about',[AboutController::class , "index"])->name("about");
 Route::get('/contact',[ContactController::class , "index"])->name("contact");
+Route::post('/contact/store', [ContactController::class, "store"])->name('contact.store');
 Route::get('/admin',[AdminController::class , "index"])->name("admin")->middleware("role:admin");
 Route::post('/booking', [BookingController::class, "store"])->name("booking.store");
 Route::post('/supscription', [SupscriptionController::class, "store"])->name("supscribtion.store");
@@ -33,6 +35,7 @@ Route::post('/calendar/store',[ReservationController::class , "store"]);
 Route::get("/calendar/show" , [ReservationController::class , "show"]);
 Route::get('/session',[StripeController::class , "session"]);
 Route::get('/success',[StripeController::class , "success"])->name("success");
+Route::get('/email',[EmailController::class , "index"])->name("email")->middleware("role:admin");
 
 
 Route::put("/reservation/update/{reservation}", [ReservationController::class,"update"])->name("reservation.update");

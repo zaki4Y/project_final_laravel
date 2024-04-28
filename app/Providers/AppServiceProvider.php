@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Contact;
 use App\Models\Reservation;
 use App\Models\Workspace;
 use Illuminate\Support\ServiceProvider;
@@ -28,5 +29,10 @@ class AppServiceProvider extends ServiceProvider
 
         $reservations= Reservation::all();
         view()->share('reservations', $reservations);
+
+        $contacts = Contact::all();
+        view()->share('contacts', $contacts);
     }
+
+   
 }

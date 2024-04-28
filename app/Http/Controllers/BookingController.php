@@ -36,7 +36,7 @@ class BookingController extends Controller
         
         
         
-        dd($request);
+        // dd($request);
         request()->validate([
             "user_id" => "required",
             "workspace_id" => "required",
