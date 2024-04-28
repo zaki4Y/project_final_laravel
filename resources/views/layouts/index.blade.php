@@ -30,7 +30,7 @@
 
                         <!-- primary nav -->
                         <div class="hidden md:flex items-center space-x-1">
-                            <a href="{{ route('contact') }}" class="py-5 px-3 text-gray-700 hover:text-gray-900 font-[Montserrat]">CONTACT US</a>
+                            <a href="{{ route('contact') }}" class="py-5 px-3 text-gray-700 hover:text-gray-900 font-[Montserrat] ">CONTACT US</a>
                             <a href="{{ route('about') }}" class="py-5 px-3 text-gray-700 hover:text-gray-900 font-[Montserrat]">ABOUT</a>
                             <a href="{{ route('reservation') }}" class="py-5 px-3 text-gray-700 hover:text-gray-900 font-[Montserrat]">RESERVATION</a>
 

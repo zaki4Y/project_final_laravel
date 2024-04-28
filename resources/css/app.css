@@ -13,9 +13,29 @@
 }
 
 @font-face {
-  font-family: "SpaceMono";
-  src: url("./fonts/SpaceMono-Bold.ttf");
+  font-family: "SpaceMono-r";
+  src: url("./fonts/SpaceMono-Regular.ttf");
 }
+
+@font-face {
+  font-family: "SpaceMono-i";
+  src: url("./fonts/SpaceMono-italic.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-i";
+  src: url("./fonts/OpenSans-Italic.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-b";
+  src: url("./fonts/OpenSans-Bold.ttf");
+}
+
+
+
+
+
 
 
 
