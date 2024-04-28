@@ -30,9 +30,9 @@
 
                         <!-- primary nav -->
                         <div class="hidden md:flex items-center space-x-1">
-                            <a href="{{ route('contact') }}" class="py-5 px-3 text-gray-700 hover:text-gray-900">contact Us</a>
-                            <a href="{{ route('about') }}" class="py-5 px-3 text-gray-700 hover:text-gray-900">About</a>
-                            <a href="{{ route('reservation') }}" class="py-5 px-3 text-gray-700 hover:text-gray-900">Reservation</a>
+                            <a href="{{ route('contact') }}" class="py-5 px-3 text-gray-700 hover:text-gray-900 font-[Montserrat]">CONTACT US</a>
+                            <a href="{{ route('about') }}" class="py-5 px-3 text-gray-700 hover:text-gray-900 font-[Montserrat]">ABOUT</a>
+                            <a href="{{ route('reservation') }}" class="py-5 px-3 text-gray-700 hover:text-gray-900 font-[Montserrat]">RESERVATION</a>
 
                         </div>
                     </div>
@@ -60,9 +60,9 @@
 
             <!-- mobile menu -->
             <div class="mobile-menu hidden md:hidden">
-                <a href="{{ route('contact') }}" class="py-5 px-3 text-gray-700 hover:text-gray-900">contact Us</a>
-                <a href="{{ route('about') }}" class="py-5 px-3 text-gray-700 hover:text-gray-900">About</a>
-                <a href="{{ route('reservation') }}" class="py-5 px-3 text-gray-700 hover:text-gray-900">Reservation</a>
+                <a href="{{ route('contact') }}" class="py-5 px-3 text-gray-700 hover:text-gray-900 font-[Montserrat]">CONTACT US</a>
+                <a href="{{ route('about') }}" class="py-5 px-3 text-gray-700 hover:text-gray-900 font-[Montserrat]">ABOUT</a>
+                <a href="{{ route('reservation') }}" class="py-5 px-3 text-gray-700 hover:text-gray-900 font-[Montserrat]">RESRVATION</a>
             </div>
         </nav>
     </header>

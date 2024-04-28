@@ -5,10 +5,8 @@
         <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <div class="max-w-lg">
                 <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">About Us</h2>
-                <p class="mt-4 text-gray-600 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
-                    eros at lacus feugiat hendrerit sed ut tortor. Suspendisse et magna quis elit efficitur consequat.
-                    Mauris eleifend velit a pretium iaculis. Donec sagittis velit et magna euismod, vel aliquet nulla
-                    malesuada. Nunc pharetra massa lectus, a fermentum arcu volutpat vel.</p>
+                <p class="mt-4 text-gray-600 text-lg">We are more than just a coworking space; we're a vibrant community designed to empower your success. Here, you'll find everything you need to thrive, from unparalleled security and dedicated community managers to personalized workspace options and premium amenities.
+                    .</p>
                 <div class="mt-8">
                     <a href="#" class="text-blue-500 hover:text-blue-600 font-medium">Learn more about us
                         <span class="ml-2">&#8594;</span></a>
