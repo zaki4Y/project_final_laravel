@@ -1,58 +1,41 @@
-{{-- <button id="clickMe" type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
-</button> --}}
+<!-- Button trigger modal -->
+<button id="clickMe" type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  {{-- Launch demo modal --}}
+</button>
 
-
-
-
-
-<div class="fixed inset-x-0 bottom-0 p-4 clickMe">
-    <div class="relative max-w-xl rounded-lg bg-gray-100 p-6 shadow-sm">
-      <button
-        type="button"
-        class="absolute -end-1 -top-1 rounded-full border border-gray-200 bg-white p-1 text-gray-400"
-      >
-        <span class="sr-only">Close</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-3 w-3"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          />
-        </svg>
-      </button>
-  
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <img
-          alt=""
-          src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-          class="h-full w-full rounded-xl object-cover"
-        />
-  
-        <div>
-          <h2 class="text-lg font-medium">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          </h2>
-  
-          <p class="mt-4 text-sm text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, eos. Inventore dolor
-            delectus commodi laudantium adipisci, illum amet itaque optio!
-          </p>
-  
-          <div class="mt-6 sm:text-right">
-            <a
-              href="#"
-              class="inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white"
-            >
-              Find out more
-            </a>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel fw-bolder light">CO WORKING</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-        </div>
+          <div class="modal-body ">
+              <form method="post" class="w-full  flex flex-col gap-y-5 " action="/calendar/store">
+                  @csrf
+                  <label for="">UserName</label>
+                  <input class="" name="title" placeholder="Event Title" type="text">
+                  <label for="">Start Day</label>
+                  <input name="dateStart" min="{{ date('Y-m-d') }}" value="{{ date('Y-m-d') }}" id="date-start"
+                      type="date">
+                  <label for="">Start time</label>
+                  <input name="timeStart" step="1800" required min="08:00:00" max="19:00:00" value="09:30:00"
+                      id="time-start" type="time">
+
+
+                  <label for="">end Day</label>
+                  <input name="dateEnd" id="date-end" type="date">
+                  <label for="">end time</label>
+                  <input name="timeEnd" id="time-end" type="time">
+
+
+                  <button class="w-f
+                   py-3 bg-purple-950">creé your event</button> 
+              </form>
+
+          </div>
+
       </div>
-    </div>
   </div>
+</div>
